@@ -1,16 +1,25 @@
-# This is a sample Python script.   
+import turtle
 
-# Press Shift+F10 to execute it or replace it with your code.
-# Press Double Shift to search everywhere for classes, files, tool windows, actions, and settings.
+from shapes import *
 
+t = turtle.Turtle()
 
-def print_hi(name):
-    # Use a breakpoint in the code line below to debug your script.
-    print(f'Hi, {name}')  # Press Ctrl+F8 to toggle the breakpoint.
+t.speed(100)
 
 
-# Press the green button in the gutter to run the script.
-if __name__ == '__main__':
-    print_hi('PyCharm')
+screen = turtle.Screen()
+screen.colormode(255)
 
-# See PyCharm help at https://www.jetbrains.com/help/pycharm/
+t.color(0,0,0)
+wn = turtle.Screen()
+wn.bgcolor(66,202,244)
+
+drawSun(t,-200,160,70)
+drawCloud(t,75,160)
+drawGrass(t)
+drawBush(t,75,-150)
+
+
+
+
+turtle.done()
