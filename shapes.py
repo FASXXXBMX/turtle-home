@@ -58,46 +58,37 @@ def drawBush(t, x, y):
     t.end_fill()
     t.setheading(90)
 
-def drawHome(t):
-    t.color("#000000")
-    t.penup()
-    t.goto(-160,-20)
-    t.pendown()
-    t.setheading(90)
-    t.fillcolor("#ffffff")
-    t.begin_fill()
-    roof1 = t.position()
-    t.forward(300)
-    roof2 = t.positi
-    t.right(90)
-    t.forward(150)
-    t.right(90)
-    t.forward(300)
-    t.right(90)
-    t.end_fill()
+def drawHome(pen):
+    pen.color(0,0,0)
+    pen.penup()
+    pen.goto(-200,-200)
+    pen.pendown()
+    pen.setheading(90)
+    pen.fillcolor("white")
+    pen.begin_fill()
+    pen.forward(150)
+    roof1=pen.position()
+    pen.right(90)
+    pen.forward(300)
+    roof2 = pen.position()
+    pen.right(90)
+    pen.forward(150)
+    pen.right(90)
+    pen.forward(300)
+    pen.right(90)
+    pen.end_fill()
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+#roof
+    pen.penup()
+    pen.goto(roof1)
+    pen.fillcolor('#8a8a8a')
+    pen.begin_fill()
+    pen.pendown()
+    pen.goto(-30,20)
+    pen.goto(roof2)
+    pen.goto(roof1)
+    pen.end_fill()
+    pen.setheading(90)
 
 
 

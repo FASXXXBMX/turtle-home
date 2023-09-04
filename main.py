@@ -18,7 +18,7 @@ drawSun(t,-200,160,70)
 drawCloud(t,75,160)
 drawGrass(t)
 drawBush(t,75,-150)
-
+drawHome(t)
 
 
 
