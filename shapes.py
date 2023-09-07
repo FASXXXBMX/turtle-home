@@ -79,9 +79,9 @@ def drawHome(pen):
     pen.end_fill()
 
 #roof
-    pen.penup()
+
     pen.goto(roof1)
-    pen.fillcolor('#8a8a8a')
+    pen.fillcolor('#8a8a8a')#внутреносте
     pen.begin_fill()
     pen.pendown()
     pen.goto(-30,20)
@@ -89,6 +89,59 @@ def drawHome(pen):
     pen.goto(roof1)
     pen.end_fill()
     pen.setheading(90)
+
+def drawdoor(pen, x ,y):
+    pen.penup()
+    pen.goto(x ,y)
+    pen.fillcolor("#5c0606")
+    pen.begin_fill()
+    pen.setheading(90)
+
+
+
+
+
+    for x in range(2):
+        pen.forward(50)
+        pen.right(90)
+        pen.forward(30)
+        pen.right(90)
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
