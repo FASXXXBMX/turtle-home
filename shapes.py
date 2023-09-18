@@ -93,6 +93,7 @@ def drawHome(pen):
 def drawdoor(pen, x ,y):
     pen.penup()
     pen.goto(x ,y)
+    pen.pendown()
     pen.fillcolor("#5c0606")
     pen.begin_fill()
     pen.setheading(90)
@@ -106,11 +107,14 @@ def drawdoor(pen, x ,y):
         pen.right(90)
         pen.forward(30)
         pen.right(90)
+    pen.end_fill()
 
-
-
-
-
+    pen.fillcolor("#fbff00")
+    pen.penup()
+    pen.goto(x+25 ,y+20)
+    pen.begin_fill()
+    pen.circle(4)
+    pen.end_fill()
 
 
 

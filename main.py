@@ -19,7 +19,7 @@ drawCloud(t,75,160)
 drawGrass(t)
 drawBush(t,75,-150)
 drawHome(t)
-
+drawdoor(t,0,-200 )
 
 
 turtle.done()
