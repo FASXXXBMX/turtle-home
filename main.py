@@ -4,6 +4,7 @@ from shapes import *
 
 t = turtle.Turtle()
 
+
 t.speed(100)
 
 
@@ -20,6 +21,7 @@ drawGrass(t)
 drawBush(t,75,-150)
 drawHome(t)
 drawdoor(t,0,-200 )
-
+drawGARAGE(t, -100 , -200 , "square")
 
 turtle.done()
+

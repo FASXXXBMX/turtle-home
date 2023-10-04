@@ -98,7 +98,7 @@ def drawdoor(pen, x ,y):
     pen.begin_fill()
     pen.setheading(90)
 
-
+#def drawOKHO
 
 
 
@@ -116,25 +116,41 @@ def drawdoor(pen, x ,y):
     pen.circle(4)
     pen.end_fill()
 
+def drawGARAGE(pen, x ,y ,shape ):
+    pen.width(4)
+    pen.color()
+    pen.fillcolor("#000000")
+
+    if shape == "square":
+        pen.penup()
+        pen.goto(x , y)
+        pen.begin_fill()
+        pen.pendown()
+
+        for x in range(2):
+            for x in range(2):
+                pen.forward(50)
+                pen.right(90)
+            pen.left(90)
+    pen.end_fill()
+
+def drawOKHO(pen, x ,y ,shape ):
+    pen.penup()
+    pen.goto(x , y)
+    pen.pendown()
+    pen.forward(-20)
+    pen.right(90)
+    pen.begin_fill()
+    pen.circle(20)
+    pen.end_fill()
+    pen.goto(x ,y)
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+    for x in range(2):
+        pen.forward(20)
+        pen.forward(-40)
+        pen.forward(20)
+        pen.right(90)
 
 
 
